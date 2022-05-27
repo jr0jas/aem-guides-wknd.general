@@ -70,3 +70,6 @@ Thumbs.db
 
 /ui.frontend/node/npm.cmd
 /ui.frontend/node/npm
+/ui.frontend/package-lock.json
+
+clientlib-react/
