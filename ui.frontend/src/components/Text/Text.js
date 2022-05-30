@@ -16,7 +16,7 @@
 
 import sanitizeHtml from 'sanitize-html';
 import sanitizeWhiteList from '../sanitize-html.whitelist';
-
+import { MapTo } from '@adobe/aem-react-editable-components';
 import React, { Component } from 'react';
 import extractModelId from '../../utils/extract-model-id';
 
@@ -47,4 +47,13 @@ class Text extends Component {
   }
 }
 
-export default Text;
+const TextEditConfig = {
+  emptyLabel: 'Text',
+
+  isEmpty: function (props) {
+    return !props || !props.text || props.text.trim().length < 1;
+  }
+};
+
+
+export default MapTo('wknd-spa-react/components/text')(Text, TextEditConfig);

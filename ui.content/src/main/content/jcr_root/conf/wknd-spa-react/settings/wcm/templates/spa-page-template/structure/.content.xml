@@ -3,32 +3,17 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2022-05-30T06:57:17.071-06:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/wknd-spa-react/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="wknd-spa-react/components/page">
         <root
+            jcr:lastModified="{Date}2022-05-30T06:57:09.841-06:00"
+            jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="wcm/foundation/components/responsivegrid">
-            <experiencefragment-header
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="wknd-spa-react/components/experiencefragment"
-                                fragmentVariationPath="/content/experience-fragments/wknd-spa-react/us/en/site/header/master"/>
-                
-
-            <responsivegrid
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid"
-                editable="{Boolean}true">
-                <cq:responsive jcr:primaryType="nt:unstructured"/>
-            </responsivegrid>
-
-            <experiencefragment-footer
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="wknd-spa-react/components/experiencefragment"
-                        fragmentVariationPath="/content/experience-fragments/wknd-spa-react/us/en/site/footer/master"/>
-            
-
-        </root>
+            sling:resourceType="wcm/foundation/components/responsivegrid"
+            editable="{Boolean}true"/>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">
                 <phone
